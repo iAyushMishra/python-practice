@@ -1,0 +1,10 @@
+def surface_area_cuboid(length, breadth, height):
+    return 2 * (length * breadth +
+                breadth * height +
+                length * height)
+
+l = float(input("Length: "))
+b = float(input("Breadth: "))
+h = float(input("Height: "))
+
+print(surface_area_cuboid(l, b, h))
