@@ -17,14 +17,18 @@
 n = 5
 print(f"Enter {n} numbers")
 max = int(input("Enter number 1:"))
+min = max
 i = 1
 
 while n>i:
     x = int(input(f'Enter number {i + 1}:'))
     if max < x:
         max = x
+    elif min > x:
+        min = x
     i += 1
 
 print('Max element is:', max)
+print('Min element is:', min)
 
 
